@@ -37,31 +37,54 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-<strong> Part 1: Create a Ticket (User) </strong> <br>
-&nbsp  Copy this link: http://localhost/osTicket/ <br>
-&nbsp  Open a new tab <br>
-&nbsp  Paste the link in the url and press Enter key <br>
-&nbsp  Click "Open a new Ticket" <br>
-&nbsp  Fill in all the boxes with the red star next to it <br>
-&nbsp&nbsp&nbsp&nbsp <em>Include screenshot</em> <br>
-&nbsp  Click "Create Ticket" <br>
-<strong> Part 2: Delegate the ticket (Admin) </strong><br>
-&nbsp;  Log in as administrator <br>
-&nbsp;&nbsp;&nbsp;&nbsp; Copy and paste this link - http://localhost/osTicket/scp/login.php - in a new tab <br>
-&nbsp;&nbsp;&nbsp;&nbsp; Type in your admin's created username and password <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Username:Jay <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Password: Password1 <br>
-&nbsp;   Click ticket <br>
-&nbsp;   Click Reassign <br>
-&nbsp;&nbsp;&nbsp;&nbsp; <em>Include screenshot</em> <br>
-<strong> Part 3: Change the priority level of the ticket </strong> <br>
-&nbsp;   Click ticket <br>
-&nbsp;   Click "SLA Plan" <br>
-&nbsp;   Click Sev-A <br>
-&nbsp;   Click "Update" <br>
-&nbsp;&nbsp;&nbsp;&nbsp; Include screenshot <br>
-<strong> Part 4: Solve the ticket (Agent) </strong> <br>
-&nbsp;   Log in as agent
+Create some sample file shares with various permissions
+Note: ORDER MATTERS! Log in to DC-1 first in order to get a user to log into Client-1 with
+Connect/log into DC-1 as your domain admin account (mydomain.com\jane_admin)
+Connect/log into Client-1 as a normal user (mydomain\<someuser>)
+On DC-1, on the C:\ drive, create 4 folders: “read-access”, “write-access”, “no-access”, “accounting” 
+[read, write, no, accounting - has a kind of sing-song rhythm to it!]
+Set the following permissions (share the folder) for the “Domain Users” group:
+Folder: “read-access”, Group: “Domain Users”, Permission: “Read”
+Mnemonic: D. U. read 
+Folder: “write-access”,  Group: “Domain Users”, Permissions: “Read/Write”
+Mnemonic: D.U. read or write 
+Folder: “no-access”, Group: “Domain Admins”, “Permissions: “Read/Write”
+Mnemonic: DAd I no READ OR WRITE
+(Skip accounting for now)
+Mnemonic: ACCOUNTANTS READ & WRITE
+
+Attempt to access file shares as a normal user
+On Client-1, navigate to the shared folder (start, run, \\dc-1)
+Try to access the folders you just created. Which folders can you access? Which folders can you create stuff in? Does it make sense?
+Non-mandatory Extra steps
+
+Create an “ACCOUNTANTS” Security Group, assign permissions, an test access
+Go back to DC-1, in Active Directory, create a security group called “ACCOUNTANTS”
+On the “accounting” folder you created earlier, set the following permissions:
+Folder: “accounting”, Group: “ACCOUNTANTS”, Permissions: “Read/Write”
+On Client-1, as  <someuser>, try to access the accountants folder. It should fail. 
+Log out of Client-1 as  <someuser>
+On DC-1, make <someuser> a member of the “ACCOUNTANTS”  Security Group
+Sign back into Client-1 as <someuser> and try to access the “accounting” share in \\DC-1\ - Does it work now?
+
+General Idea:
+Creating four folders in DC-1 and telling Client-1's user what they're allowed to do it (will they be able to write in it, or just read it, or even have access to it at all).
+Create the security group before you even create the folders, so that you can just set conditions for them all in one go.
+For this step, have in mind the Client-1 username you plan to use.
+After all that is done, THEN log into Client-1 with whatever user you choose.
+
+Any Questions I Have Before Starting?
+Step 16 - how to make <someuser> member of “ACCOUNTANTS” group.
+WITy (What I'll Try): Right clicking stuff and looking for something that says “members” or “users”
+
+Essential steps:
+Login to DC-1 as mydomain.com\jane_admin
+In DC-1: 
+Create security group [step 11]
+make <someuser> a member of the “ACCOUNTANTS”  Security Group
+Create 4 folders and use mnemonics to set permissions
+THEN login to Client-1 with <someuser>
+Start, run, type: “\\dc-1”; see which folders you can/can't access
 </p>
 <br />
 <p>
