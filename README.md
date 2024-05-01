@@ -45,6 +45,7 @@ After all that is done, THEN log into Client-1 with whatever user you choose. <b
 <strong> Log into Client-1 as a normal user (mydomain\<someuser>) </strong><br>
 <strong> In DC-1, on the C:\ drive, create 4 folders: “read-access”, “write-access”, “no-access”, “accounting” </strong><br><br> 
 <strong> Set the following permissions (share the folder) for the “Domain Users” group: </strong><br>
+&nbsp;&nbsp; - Right click folder > Properties> Sharing tab> Share> Type in full name of group (ex: "domain users" vs "domain"> Add> Set permission level> Share <br>
 <strong> Folder: “read-access”, Group: “Domain Users”, Permission: “Read” </strong><br>
 <strong> Mnemonic: </strong> D. U. read  <br>
 <strong> Folder: “write-access”,  Group: “Domain Users”, Permissions: “Read/Write” </strong><br>
