@@ -107,8 +107,12 @@ Try to access the folders you just created. Which folders can you access? Which 
 
 <strong> Create an “ACCOUNTANTS” Security Group, assign permissions, an test access </strong><br>
 <strong> Go back to DC-1, in Active Directory, create a security group called “ACCOUNTANTS” </strong><br>
+
+
 On the “accounting” folder you created earlier, set the following permissions: <br>
-<strong> Folder: “accounting”, Group: “ACCOUNTANTS”, Permissions: “Read/Write” <br>
+<strong> Folder: “accounting”, Group: “ACCOUNTANTS”, Permissions: “Read/Write” </strong><br>
+
+
 On Client-1, as  <someuser>, try to access the accountants folder. It should fail. <br>
 Log out of Client-1 as  <someuser> <br>
 On DC-1, make <someuser> a member of the “ACCOUNTANTS”  Security Group <br>
@@ -116,13 +120,36 @@ Sign back into Client-1 as <someuser> and try to access the “accounting” sha
 
 
 Essential steps: <br>
-Login to DC-1 as mydomain.com\jane_admin (line 44) <br> 
+Log into DC-1 as mydomain.com\jane_admin (line 44) <br> 
 In DC-1:  <br>
 Create security group called Accountants [line 61] <br>
+&nbsp;&nbsp; - First you have to create an OU (_SECURITY_GROUPS)
+&nbsp;&nbsp; - Then add ACCOUNTANTS inside of it (Right click + New + Group]
 Make <someuser> a member of the “ACCOUNTANTS”  Security Group (line 65-68) <br>
 Create 4 folders and use mnemonics to set permissions (lines 46-55) <br>
 THEN login to Client-1 with <someuser> <br>
 Start, run, type: “\\dc-1”; see which folders you can/can't access <br>
+
+<strong> Simplified version </strong><br>
+- Log into DC-1 as mydomain.com\jane_admin
+- In DC-1:
+&nbsp; - Create security group called Accountants <br>
+&nbsp;&nbsp; - First you have to create an OU (_SECURITY_GROUPS) <br>
+&nbsp;&nbsp; - Then add ACCOUNTANTS inside of it (Right click + New + Group] <br>
+&nbsp; - Make <someuser> a member of the “ACCOUNTANTS”  Security Group <br>
+- (Still in DC-1) Create 4 folders in C:\ drive <br>
+&nbsp;&nbsp; - “read-access”, “write-access”, “no-access”, “accounting” <br>
+<strong> - Set the following permissions: </strong><br>
+&nbsp;&nbsp; - Right click folder > Properties> Sharing tab> Share> Type in full name of group (ex: "domain users" vs "domain"> Add> Set permission level> Share <br>
+<strong> Folder: “read-access”, Group: “Domain Users”, Permission: “Read” </strong><br>
+<strong> Mnemonic: </strong> D. U. read  <br>
+<strong> Folder: “write-access”,  Group: “Domain Users”, Permissions: “Read/Write” </strong><br>
+<strong> Mnemonic: </strong> D.U. read or write <br>
+<strong> Folder: “no-access”, Group: “Domain Admins”, “Permissions: “Read/Write” </strong><br>
+<strong> Mnemonic: </strong> DAd I no READ OR WRITE <br>
+<strong> Folder: “accounting”, Group: “ACCOUNTANTS”, Permissions: “Read/Write” </strong><br>
+<strong> Mnemonic: </strong> ACCOUNTANTS READ & WRITE <br>
+ - Sign back into Client-1 as <someuser> and try to access the “accounting” share in \\DC-1\ - Does it work now? <br>
 </p>
 </p>
 <p>
@@ -134,7 +161,7 @@ Start, run, type: “\\dc-1”; see which folders you can/can't access <br>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor iSFn reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
 
