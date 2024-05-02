@@ -139,7 +139,7 @@ Start, run, type: “\\dc-1”; see which folders you can/can't access <br>
 &nbsp; - Make <someuser> a member of the “ACCOUNTANTS”  Security Group <br>
 - (Still in DC-1) Create 4 folders in C:\ drive <br>
 &nbsp;&nbsp; - “read-access”, “write-access”, “no-access”, “accounting” <br>
-<strong> - Set the following permissions: </strong><br>
+- Set the following permissions: </strong><br>
 &nbsp;&nbsp; - Right click folder > Properties> Sharing tab> Share> Type in full name of group (ex: "domain users" vs "domain"> Add> Set permission level> Share <br>
 <strong> Folder: “read-access”, Group: “Domain Users”, Permission: “Read” </strong><br>
 <strong> Mnemonic: </strong> D. U. read  <br>
