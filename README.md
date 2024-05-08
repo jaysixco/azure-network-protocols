@@ -67,26 +67,11 @@ Active Directory Users and Computers > Right click "mydomain.com" > Hover over "
 <strong> Login to Client-1 with <someuser> </strong><br>
 <strong> Right click "Start" button > click "Run" > type: “\\dc-1”; see which folders you can/can't access </strong><br> 
 
-</p>
-</p>
-<p>
-
-</p>
-
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<strong> Finish </strong>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor iSFn reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  <em>
+    All above steps are accurate. Can follow it and it will work. Fix formatting. 
+  </em>
 </p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
 
