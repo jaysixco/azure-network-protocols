@@ -42,6 +42,8 @@ After all that is done, THEN log into Client-1 with whatever user you choose. <b
 <strong> Simplified version <br>
 - Log into DC-1 as mydomain.com\jane_admin <br>
 - In DC-1: <br></strong>
+Active Directory Users and Computers > Right click "mydomain.com" > Hover over "New" > Click "Organizational Unit" > Name it "_SECURITY_GROUPS" > Then add ACCOUNTANTS inside of it (Right click white space + New + Group)
+  <br>
 &nbsp; - Create security group called Accountants <br>
 &nbsp;&nbsp; - First you have to create an OU (_SECURITY_GROUPS) <br>
 &nbsp;&nbsp; - Then add ACCOUNTANTS inside of it (Right click + New + Group] <br>
