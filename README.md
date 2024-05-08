@@ -50,6 +50,8 @@ Active Directory Users and Computers > Right click "mydomain.com" > Hover over "
 &nbsp; - Make <someuser> a member of the “ACCOUNTANTS”  Security Group <em>(find instructions for this)</em>
   <br>
 - <strong> (Still in DC-1) Create 4 folders in C:\ drive <br></strong>
+  Type File Explorer in search bar > click "This PC" > click "Windows (C:)" > Right click white space > click/hover "New" > click "Folder"
+  <br>
 &nbsp;&nbsp; - “read-access”, “write-access”, “no-access”, “accounting” <br>
 - <strong> Set the following permissions: </strong><br>
 &nbsp;&nbsp; - Right click folder > Properties> Sharing tab> Share> Type in full name of group (ex: "domain users" vs "domain"> Add> Set permission level> Share <br>
