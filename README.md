@@ -47,7 +47,8 @@ Active Directory Users and Computers > Right click "mydomain.com" > Hover over "
 &nbsp; - Create security group called Accountants <br>
 &nbsp;&nbsp; - First you have to create an OU (_SECURITY_GROUPS) <br>
 &nbsp;&nbsp; - Then add ACCOUNTANTS inside of it (Right click + New + Group] <br>
-&nbsp; - Make <someuser> a member of the “ACCOUNTANTS”  Security Group <em>(find instructions for this)</em>
+&nbsp; - Make <someuser> a member of the “ACCOUNTANTS”  Security Group <br>
+  ADUC > right click "ACCOUNTANTS" > click "Members" tab > click "Add" > type <someuser> > click "Check Names" > click "Ok" > click "Apply" > click "OK"
   <br>
 - <strong> (Still in DC-1) Create 4 folders in C:\ drive <br></strong>
   Type File Explorer in search bar > click "This PC" > click "Windows (C:)" > Right click white space > click/hover "New" > click "Folder"
@@ -63,7 +64,9 @@ Active Directory Users and Computers > Right click "mydomain.com" > Hover over "
 <strong> Mnemonic: </strong> DAd I no READ OR WRITE <br>
 <strong> Folder: “accounting”, Group: “ACCOUNTANTS”, Permissions: “Read/Write” </strong><br>
 <strong> Mnemonic: </strong> ACCOUNTANTS READ & WRITE <br>
-- <strong>Sign back into Client-1 as <someuser> and try to access the “accounting” share in \\DC-1\ - Does it work now? </strong><br>
+<strong> Login to Client-1 with <someuser> </strong><br>
+<strong> Right click "Start" button > click "Run" > type: “\\dc-1”; see which folders you can/can't access </strong><br> 
+
 </p>
 </p>
 <p>
