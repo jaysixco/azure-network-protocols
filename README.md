@@ -48,6 +48,8 @@ Active Directory Users and Computers > Right click "mydomain.com" > Hover over "
 &nbsp;&nbsp; - First you have to create an OU (_SECURITY_GROUPS) <br>
 &nbsp;&nbsp; - Then add ACCOUNTANTS inside of it (Right click + New + Group] <br>
 &nbsp; - Make <someuser> a member of the “ACCOUNTANTS”  Security Group <br>
+  <em>find instructions for this</em>
+  <br>
 - <strong> (Still in DC-1) Create 4 folders in C:\ drive <br></strong>
 &nbsp;&nbsp; - “read-access”, “write-access”, “no-access”, “accounting” <br>
 - <strong> Set the following permissions: </strong><br>
