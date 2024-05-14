@@ -88,7 +88,7 @@ In DC-1: <br></strong>
   <br>
   <br>
 <strong> Set the following permissions: </strong><br>
-    1. Right click folder <br>
+    1. Right click  the folder <br>
     2. Properties <br>
     3. Sharing tab <br>
     4. Share <br>
