@@ -40,22 +40,41 @@ After all that is done, THEN log into Client-1 with whatever user you choose. <b
 </p>
 <p>
 <strong> Simplified version <br>
-- Log into DC-1 as mydomain.com\jane_admin <br>
-- In DC-1: <br></strong>
-Active Directory Users and Computers > Right click "mydomain.com" > Hover over "New" > Click "Organizational Unit" > Name it "_SECURITY_GROUPS" > Then add ACCOUNTANTS inside of it (Right click white space + New + Group)
+Log into DC-1 as mydomain.com\jane_admin <br>
+In DC-1: <br></strong>
+First you have to create an OU (_SECURITY_GROUPS) <br>
+Then add ACCOUNTANTS inside of it (Right click + New + Group] <br>
+&nbsp; Active Directory Users and Computers > Right click "mydomain.com" > Hover over "New" > Click "Organizational Unit" > Name it "_SECURITY_GROUPS" > Then add ACCOUNTANTS inside of it (Right click white space + New + Group)
   <br>
-&nbsp; - Create security group called Accountants <br>
-&nbsp;&nbsp; - First you have to create an OU (_SECURITY_GROUPS) <br>
-&nbsp;&nbsp; - Then add ACCOUNTANTS inside of it (Right click + New + Group] <br>
-&nbsp; - Make <someuser> a member of the “ACCOUNTANTS”  Security Group <br>
+- Create security group called Accountants <br>
+&nbsp; Make <someuser> a member of the “ACCOUNTANTS”  Security Group <br>
   ADUC > right click "ACCOUNTANTS" > click "Members" tab > click "Add" > type <someuser> > click "Check Names" > click "Ok" > click "Apply" > click "OK"
   <br>
-- <strong> (Still in DC-1) Create 4 folders in C:\ drive <br></strong>
-  Type File Explorer in search bar > click "This PC" > click "Windows (C:)" > Right click white space > click/hover "New" > click "Folder"
   <br>
-&nbsp;&nbsp; - “read-access”, “write-access”, “no-access”, “accounting” <br>
-- <strong> Set the following permissions: </strong><br>
-&nbsp;&nbsp; - Right click folder > Properties> Sharing tab> Share> Type in full name of group (ex: "domain users" vs "domain"> Add> Set permission level> Share <br>
+<strong> (Still in DC-1) Create 4 folders in C:\ drive <br></strong>
+    1. Type File Explorer in search bar <br>
+    2. click "This PC" <br>
+    3. click "Windows (C:)" <br>
+    4. Right click white space > click/hover "New" <br>
+    5. click "Folder" <br>
+    6. Name the folder: “read-access” (without the quotes) <br>
+    7. Repeat steps 3 and 4 <br>
+    8. Name the folder: “write-access” (without the quotes)<br>
+    9. Repeat steps 3 and 4 <br>
+    10. Name the folder: “no-access” (without the quotes) <br>
+    11. Repeat steps 3 and 4 <br>
+    12. Name the folder: “accounting” (without the quotes) <br>
+  <br>
+  <br>
+<strong> Set the following permissions: </strong><br>
+    1. Right click folder <br>
+    2. Properties <br>
+    3. Sharing tab <br>
+    4. Share <br>
+    5. Type in full name of group (ex: "domain users" vs "domain" <br>
+    6. Add <br>
+    7. Set permission level <br>
+    8. Share <br>
 <strong> Folder: “read-access”, Group: “Domain Users”, Permission: “Read” </strong><br>
 <strong> Mnemonic: </strong> D. U. read  <br>
 <strong> Folder: “write-access”,  Group: “Domain Users”, Permissions: “Read/Write” </strong><br>
@@ -75,3 +94,6 @@ Active Directory Users and Computers > Right click "mydomain.com" > Hover over "
   </em>
 </p>
 
+Notes later
+- Add screenshots for part where you set permissions
+- Delete mnemonics
