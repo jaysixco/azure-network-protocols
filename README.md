@@ -101,12 +101,13 @@ In DC-1: <br></strong>
 <strong> Folder: “no-access”, Group: “Domain Admins”, “Permissions: “Read/Write” </strong><br>
 <strong> Folder: “accounting”, Group: “ACCOUNTANTS”, Permissions: “Read/Write” </strong><br>
   <br>
-<strong> See which folders you can or can't access
+<strong> See which folders you can or can't access </strong> <br>
     1. Login to Client-1 with username of some user <br>
     2. Right click "Start" button <br>
     3. click "Run" <br>
   insert screenshot <br>
     4. type: “\\dc-1” <br>
+  insert screenshot <br>
     5. Click on the different folders and you see which folders you can/can't access </strong><br> 
 
 <strong> Finish </strong>
