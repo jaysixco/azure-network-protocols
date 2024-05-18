@@ -43,13 +43,11 @@ After all that is done, THEN log into Client-1 with whatever user you choose. <b
 Log into DC-1 as mydomain.com\jane_admin <br>
 In DC-1: <br></strong>
 <strong> First you have to create an Organizational Unit and name it "_SECURITY_GROUPS" </strong><br>
-  1. Type Active Directory in search bar and click Active Directory Users and Computers <br>
+  1. Type "Active Directory" in the start menu search bar and  then click Active Directory Users and Computers <br>
   insert screenshot <br>
-  2. Right click "mydomain.com" <br>
-  3. Hover mouse over "New" > <br>
-  4. Click "Organizational Unit" <br>
+  2. Right click "mydomain.com", hover mouse over "New", and click "Organizational Unit" <br>
   insert screenshot <br>
-  5. Name it "_SECURITY_GROUPS" <br>
+  5. Name it "_SECURITY_GROUPS" and then click "Ok" <br>
   insert screenshot <br>
   <br>
 <strong> After you create the organizational unit, add a group inside of it and name it "ACCOUNTANTS" </strong><br>
@@ -73,11 +71,10 @@ In DC-1: <br></strong>
   <br>
   <br>
 <strong> (Still in DC-1) Create 4 folders in C:\ drive <br></strong>
-    1. Type File Explorer in search bar <br>
-    2. click "This PC" <br>
+    1. Type "File Explorer" in start menu search bar and click it. <br>
+    2. On the sidebar, scroll down until you see "This PC". Click it. <br>
     3. click "Windows (C:)" <br>
-    4. Right click white space > click/hover "New" <br>
-    5. click "Folder" <br>
+    4. Right click white space, hover over "New", and click "Folder" <br>
     6. Name the folder: “read-access” (without the quotes) <br>
     7. Repeat steps 3 and 4 <br>
     8. Name the folder: “write-access” (without the quotes)<br>
@@ -88,14 +85,14 @@ In DC-1: <br></strong>
   <br>
   <br>
 <strong> Set the following permissions: </strong><br>
-    1. Right click  the folder <br>
-    2. Properties <br>
-    3. Sharing tab <br>
-    4. Share <br>
-    5. Type in full name of group (ex: "domain users" vs "domain" <br>
-    6. Add <br>
-    7. Set permission level <br>
-    8. Share <br>
+    1. Right click the folder <br>
+    2. Click "Properties" <br>
+    3. Click the "Sharing" tab in the page that pops up <br>
+    4. Click "Share" <br>
+    5. Type in the full name of the "Group:" below that is in the same row as the folder you clicked (ex: type "domain users" instead of just "domain" <br>
+    6. Click "Add" <br>
+    7. Set permission level to the "Permissions:" below that is in the same row  as the folder you clicked <br>
+    8. Click "Share" <br>
 <strong> Folder: “read-access”, Group: “Domain Users”, Permission: “Read” </strong><br>
 <strong> Folder: “write-access”,  Group: “Domain Users”, Permissions: “Read/Write” </strong><br>
 <strong> Folder: “no-access”, Group: “Domain Admins”, “Permissions: “Read/Write” </strong><br>
@@ -104,9 +101,9 @@ In DC-1: <br></strong>
 <strong> See which folders you can or can't access </strong> <br>
     1. Login to Client-1 with username of some user <br>
     2. Right click "Start" button <br>
-    3. click "Run" <br>
+    3. Click "Run" <br>
   insert screenshot <br>
-    4. type: “\\dc-1” <br>
+    4. Type: “\\dc-1” <br>
   insert screenshot <br>
     5. Click on the different folders and you see which folders you can/can't access </strong><br> 
 
