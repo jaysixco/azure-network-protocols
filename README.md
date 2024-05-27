@@ -98,6 +98,8 @@ In DC-1: <br></strong>
 <strong> Folder: “no-access”, Group: “Domain Admins”, “Permissions: “Read/Write” </strong><br>
 <strong> Folder: “accounting”, Group: “ACCOUNTANTS”, Permissions: “Read/Write” </strong><br>
   <br>
+  (insert screenshot of read access)
+  <br>
 <strong> See which folders you can or can't access </strong> <br>
     1. Login to Client-1 with username of some user <br>
     2. Right click "Start" button <br>
@@ -106,6 +108,7 @@ In DC-1: <br></strong>
     4. Type: “\\dc-1” <br>
   insert screenshot <br>
     5. Click on the different folders and you see which folders you can/can't access </strong><br> 
+    (for example, read-access will not allow us to write anything in it because we have set Permission only to read)
 
 <strong> Finish </strong>
 </p>
