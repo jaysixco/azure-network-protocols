@@ -43,7 +43,7 @@ After all that is done, THEN log into Client-1 with whatever user you choose. <b
 Log into DC-1 as mydomain.com\jane_admin <br>
 In DC-1: <br></strong>
 <strong> First you have to create an Organizational Unit and name it "_SECURITY_GROUPS" </strong><br>
-  1. Type "Active Directory" in the start menu search bar and  then click Active Directory Users and Computers <br>
+  1. Type "Active Directory" in the start menu search bar and  then click "Active Directory Users and Computers" <br>
   insert screenshot <br>
   2. Right click "mydomain.com", hover mouse over "New", and click "Organizational Unit" <br>
   insert screenshot <br>
