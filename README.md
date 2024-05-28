@@ -65,15 +65,15 @@ A - In DC-1: <br></strong>
 <strong> C - Make <someuser> a member of the “ACCOUNTANTS”  Security Group </strong> <br>
   1. Type "Active Directory" in search bar and click Active Directory Users and Computers <br>
   2. Right click "ACCOUNTANTS" <br>
-  3. click "Members" tab <br>
+  3. Click "Members" tab <br>
   insert screenshot <br>
-  4. click "Add" <br>
+  4. Click "Add" <br>
   5. Type the username of some user generated in another hub 
   add link <br>
-  6. click "Check Names" <br>
-  7. click "Ok" <br>
-  8. click "Apply" <br>
-  9. click "OK" <br>
+  6. Click "Check Names" <br>
+  7. Click "Ok" <br>
+  8. Click "Apply" <br>
+  9. Click "OK" <br>
   <br>
   <br>
 
@@ -81,7 +81,7 @@ A - In DC-1: <br></strong>
 <strong> D - (Still in DC-1) Create 4 folders in C:\ drive <br></strong>
     1. Type "File Explorer" in start menu search bar and click it. <br>
     2. On the sidebar, scroll down until you see "This PC". Click it. <br>
-    3. click "Windows (C:)" <br>
+    3. Click "Windows (C:)" <br>
     4. Right click white space, hover over "New", and click "Folder" <br>
     6. Name the folder: “read-access” (without the quotes) <br>
     7. Repeat steps 3 and 4 <br>
