@@ -44,8 +44,9 @@ Log into DC-1 as mydomain.com\jane_admin <br>
   
 A - In DC-1: <br></strong>
 <strong> First you have to create an Organizational Unit and name it "_SECURITY_GROUPS" </strong><br>
-  1. Type "Active Directory" in the start menu search bar and  then click "Active Directory Users and Computers" <br>
-  insert screenshot <br>
+  1. Type "Active Directory" in Start Menu search box (1) and then cllick "Active Directory Users and Computers (ADUC)" (2) <br>
+<img width="960" alt="Capture - ADUC" src="https://github.com/jaysixco/configure-ad/assets/160427311/b947408d-dde2-4fdd-9b40-57cb426ec615">
+<br>
   2. Right click "mydomain.com", hover mouse over "New", and click "Organizational Unit" <br>
   insert screenshot <br>
   5. Name it "_SECURITY_GROUPS" and then click "Ok" <br>
