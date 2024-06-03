@@ -36,11 +36,13 @@ After all that is done, THEN log into Client-1 with whatever user you choose. <b
 <h2>Installation Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
 <strong> Simplified version <br>
 Log into DC-1 as mydomain.com\jane_admin <br>
+Copy DC-1's Public IP address, if you don't have it already <br>
+Open Remote Desktop Login page (type "Remote Desktop" in Start menu <br>
+Paste the Public IP address, then click enter.
+Click "More choices", then click "Use a different account"<br>
+For the username, type "mydomain.com\jane_admin" and type the same password you created for the VM <br>
   
 A - In DC-1: <br></strong>
 <strong> First you have to create an Organizational Unit and name it "_SECURITY_GROUPS" </strong><br>
@@ -48,7 +50,8 @@ A - In DC-1: <br></strong>
 <img width="960" alt="Capture - ADUC" src="https://github.com/jaysixco/configure-ad/assets/160427311/b947408d-dde2-4fdd-9b40-57cb426ec615">
 <br>
   2. Right click "mydomain.com", hover mouse over "New", and click "Organizational Unit" <br>
-  insert screenshot <br>
+<img width="565" alt="Capture - OU" src="https://github.com/jaysixco/configure-ad/assets/160427311/d7c7cb8d-4d7c-40f7-bdd2-12d5f3374e75">
+<br>
   3. Name it "_SECURITY_GROUPS" and then click "Ok" <br>
   insert screenshot <br>
   <br>
