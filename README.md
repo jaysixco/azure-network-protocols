@@ -112,9 +112,8 @@ A - In DC-1: <br></strong>
     3. Click the "Sharing" tab in the page that pops up, then click "Share" <br>
     5. Type in the full name of the "Group:" below that is in the same row as the folder you clicked (ex: type "domain users" instead of just "domain", then click "Add" <br>
     <img width="441" alt="dom u add" src="https://github.com/jaysixco/azure-network-protocols/assets/160427311/23c90912-0142-477a-a751-89e999dd9c47">
-    7. Set permission level to the "Permissions:" below that is in the same row  as the folder you clicked then click "Share" <br>
-    <img width="441" alt="perm level" src="https://github.com/jaysixco/azure-network-protocols/assets/160427311/473a8cd0-21b8-4f54-8b96-18ef74b398bc">
-    8. 
+    6. Set permission level to the "Permissions:" below that is in the same row  as the folder you clicked then click "Share" <br>
+    <img width="441" alt="perm level" src="https://github.com/jaysixco/azure-network-protocols/assets/160427311/473a8cd0-21b8-4f54-8b96-18ef74b398bc"> <br>
 <strong> Folder: “read-access”, Group: “Domain Users”, Permission: “Read” </strong><br>
 <strong> Folder: “write-access”,  Group: “Domain Users”, Permissions: “Read/Write” </strong><br>
 <strong> Folder: “no-access”, Group: “Domain Admins”, “Permissions: “Read/Write” </strong><br>
