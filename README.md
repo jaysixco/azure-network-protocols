@@ -53,30 +53,34 @@ A - In DC-1: <br></strong>
 <img width="565" alt="Capture - OU" src="https://github.com/jaysixco/configure-ad/assets/160427311/d7c7cb8d-4d7c-40f7-bdd2-12d5f3374e75">
 <br>
   3. Name it "_SECURITY_GROUPS" and then click "Ok" <br>
-  insert screenshot <br>
+<img width="328" alt="sgps" src="https://github.com/jaysixco/azure-network-protocols/assets/160427311/8a73e00c-e7c5-4b3e-81e2-5b54b44a514d">
+<br>
   <br>
 
   
 <strong> B - After you create the organizational unit, add a group inside of it and name it "ACCOUNTANTS" </strong><br>
-  1. Right click white space, [click/hover?] New, click Group <br>
-  insert screenshot <br>
-  2. Name it "ACCOUNTANTS" <br>
-  insert screenshot <br>
+  1. Click the small arrow next to "mydomain.com" in the sidebar, then click "_SECURITY_GROUPS"
+  2. Right click white space, hover over New, click Group <br>
+<img width="565" alt="new - group" src="https://github.com/jaysixco/azure-network-protocols/assets/160427311/33376868-6476-4503-a6e7-eefec288062b">
+<br>
+  3. Name it "ACCOUNTANTS" <br>
+<img width="328" alt="acntnts" src="https://github.com/jaysixco/azure-network-protocols/assets/160427311/aceaa860-ffd3-485f-a33a-6342b799e97f">
+<br>
   <br>
 
   
 <strong> C - Make <someuser> a member of the “ACCOUNTANTS”  Security Group </strong> <br>
-  1. Type "Active Directory" in search bar and click Active Directory Users and Computers <br>
-  2. Right click "ACCOUNTANTS" <br>
-  3. Click "Members" tab <br>
-  insert screenshot <br>
-  4. Click "Add" <br>
-  5. Type the username of some user generated in another hub 
-  add link <br>
-  6. Click "Check Names" <br>
-  7. Click "Ok" <br>
-  8. Click "Apply" <br>
-  9. Click "OK" <br>
+  1. Type "Active Directory" in search bar and click Active Directory Users and Computers
+  2. Click "mydomain.com", then double click "SECURITY_GROUPS" <br>
+  <img width="565" alt="mydomain, then sgps" src="https://github.com/jaysixco/azure-network-protocols/assets/160427311/7f164c54-d2b5-4ef8-ad22-64c6ddcb113a"> <br>
+  3. Right click "ACCOUNTANTS", then click "Properties" <br>
+  <img width="565" alt="act-prop" src="https://github.com/jaysixco/azure-network-protocols/assets/160427311/8c7d2335-816b-4ff7-9bce-0659c0c7386e">
+  4. Click "Members" tab, then Click "Add" <br>
+  <img width="300" alt="members, then click Add" src="https://github.com/jaysixco/azure-network-protocols/assets/160427311/213f67ff-82b1-466b-96a8-1f554f0c803c">
+  5. Type the username of some user generated in another hub, click "Check Names", click "Ok" <br>
+  <img width="343" alt="type name, click Check Names, click Ok (1)" src="https://github.com/jaysixco/azure-network-protocols/assets/160427311/aed54309-af92-4a90-aba2-147242570ffd">
+  6. Click "Apply", then  click "OK" <br>
+  <img width="300" alt="click Apply, then click OK (2)" src="https://github.com/jaysixco/azure-network-protocols/assets/160427311/afc69fc4-2c46-40fa-9c41-9e3a7c518039">
   <br>
   <br>
 
@@ -86,31 +90,35 @@ A - In DC-1: <br></strong>
     2. On the sidebar, scroll down until you see "This PC". Click it. <br>
     3. Click "Windows (C:)" <br>
     4. Right click white space, hover over "New", and click "Folder" <br>
-    6. Name the folder: “read-access” (without the quotes) <br>
+    <img width="590" alt="new folder" src="https://github.com/jaysixco/azure-network-protocols/assets/160427311/f14e75f5-48db-4b25-a0fe-9074bfd3abf6">
+
+    6. Name the folder: “read-access” (without the quotes) then press enter <br>
+    <img width="590" alt="read access" src="https://github.com/jaysixco/azure-network-protocols/assets/160427311/9707eff2-9f27-4aed-81b8-f5fe69695f51">
     7. Repeat steps 3 and 4 <br>
-    8. Name the folder: “write-access” (without the quotes)<br>
+    8. Name the folder: “write-access” (without the quotes) then press enter <br>
     9. Repeat steps 3 and 4 <br>
-    10. Name the folder: “no-access” (without the quotes) <br>
+    10. Name the folder: “no-access” (without the quotes) then press enter <br>
     11. Repeat steps 3 and 4 <br>
-    12. Name the folder: “accounting” (without the quotes) <br>
+    12. Name the folder: “accounting” (without the quotes) then press enter <br>
+  FInal product: <br>
+ <img width="590" alt="final product" src="https://github.com/jaysixco/azure-network-protocols/assets/160427311/3975277b-9846-47ca-924b-f93f2a4e4dde">
   <br>
   <br>
 
   
 <strong> E - Set the following permissions: </strong><br>
-    1. Right click the folder <br>
+    1. Right click the folder name <br>
     2. Click "Properties" <br>
-    3. Click the "Sharing" tab in the page that pops up <br>
-    4. Click "Share" <br>
-    5. Type in the full name of the "Group:" below that is in the same row as the folder you clicked (ex: type "domain users" instead of just "domain" <br>
-    6. Click "Add" <br>
-    7. Set permission level to the "Permissions:" below that is in the same row  as the folder you clicked <br>
-    8. Click "Share" <br>
+    3. Click the "Sharing" tab in the page that pops up, then click "Share" <br>
+    5. Type in the full name of the "Group:" below that is in the same row as the folder you clicked (ex: type "domain users" instead of just "domain", then click "Add" <br>
+    <img width="441" alt="dom u add" src="https://github.com/jaysixco/azure-network-protocols/assets/160427311/23c90912-0142-477a-a751-89e999dd9c47">
+    7. Set permission level to the "Permissions:" below that is in the same row  as the folder you clicked then click "Share" <br>
+    <img width="441" alt="perm level" src="https://github.com/jaysixco/azure-network-protocols/assets/160427311/473a8cd0-21b8-4f54-8b96-18ef74b398bc">
+    8. 
 <strong> Folder: “read-access”, Group: “Domain Users”, Permission: “Read” </strong><br>
 <strong> Folder: “write-access”,  Group: “Domain Users”, Permissions: “Read/Write” </strong><br>
 <strong> Folder: “no-access”, Group: “Domain Admins”, “Permissions: “Read/Write” </strong><br>
 <strong> Folder: “accounting”, Group: “ACCOUNTANTS”, Permissions: “Read/Write” </strong><br>
-  (insert screenshot of read access)
   <br>
   <br>
   
@@ -134,4 +142,75 @@ A - In DC-1: <br></strong>
 
 Notes later
 - Add screenshots for part where you set permissions
-- Delete mnemonics
+
+
+
+
+
+
+
+For write
+<img width="272" alt="write - sharing tab, share" src="https://github.com/jaysixco/azure-network-protocols/assets/160427311/63f7e8bf-384e-4b3e-8228-afb1ac0c3cd6">
+<img width="441" alt="write (2)" src="https://github.com/jaysixco/azure-network-protocols/assets/160427311/1bd2f0af-622a-43dc-b319-384be3c875a7">
+<img width="441" alt="write (3)" src="https://github.com/jaysixco/azure-network-protocols/assets/160427311/af357095-8ad6-467c-855b-f989e61910ea">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+For no access
+<img width="272" alt="no act - sharing share" src="https://github.com/jaysixco/azure-network-protocols/assets/160427311/f2c73f56-c26b-4f71-b69a-1e625e507a98">
+<img width="441" alt="no act dom add (2)" src="https://github.com/jaysixco/azure-network-protocols/assets/160427311/fe909afe-ff08-4259-b88a-68885916bdf8">
+<img width="441" alt="no act perm level (3)" src="https://github.com/jaysixco/azure-network-protocols/assets/160427311/08aea45b-a709-49e2-880f-4e7ca1b072ad">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+For accounting
+<img width="272" alt="acnting sharing, share" src="https://github.com/jaysixco/azure-network-protocols/assets/160427311/0d8b4ffd-ad81-40ba-b1ed-6e038e84a5f3">
+<img width="441" alt="act, add, share" src="https://github.com/jaysixco/azure-network-protocols/assets/160427311/c3b2a512-4cbe-4c0c-aa7a-3a190e0054fa">
+<img width="441" alt="act perm" src="https://github.com/jaysixco/azure-network-protocols/assets/160427311/9ca4b97b-0952-46bf-9937-a8158acbd0cb">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
