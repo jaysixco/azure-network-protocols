@@ -124,11 +124,11 @@ A - In DC-1: <br></strong>
   
 <strong> F - See which folders you can or can't access </strong> <br>
     1. Login to Client-1 with username of some user <br>
-    2. Right click "Start" button <br>
-    3. Click "Run" <br>
-  insert screenshot <br>
-    4. Type: “\\dc-1” <br>
-  insert screenshot <br>
+    2. Right click "Start" button then click "Run" <br>
+<img width="214" alt="right click start, then click run" src="https://github.com/jaysixco/azure-network-protocols/assets/160427311/28de9c64-1cb0-48af-a133-5ee87992135e">
+    4. Type: “\\dc-1” (1) then click "OK" (2) <br>
+<img width="285" alt="type dc-1 then click ok" src="https://github.com/jaysixco/azure-network-protocols/assets/160427311/0ac94aba-e8c4-4900-b653-2b9e76fbf5a6">
+<br>
     5. Click on the different folders and you see which folders you can/can't access </strong><br> 
     (for example, read-access will not allow us to write anything in it because we have set Permission only to read)
 
