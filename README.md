@@ -100,6 +100,7 @@ A - In DC-1: <br></strong>
     10. Name the folder: “no-access” (without the quotes) then press enter <br>
     11. Repeat steps 3 and 4 <br>
     12. Name the folder: “accounting” (without the quotes) then press enter <br>
+    
   FInal product: <br>
  <img width="590" alt="final product" src="https://github.com/jaysixco/azure-network-protocols/assets/160427311/3975277b-9846-47ca-924b-f93f2a4e4dde">
   <br>
