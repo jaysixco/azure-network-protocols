@@ -106,8 +106,8 @@ A - In DC-1: <br></strong>
   <br>
 
   
-<strong> E - Set the following permissions: </strong><br>
-    1. Right click the folder name <br>
+<strong> E - Set permission for "read-access": </strong><br>
+    1. Right click "read-access" <br>
     2. Click "Properties" <br>
     3. Click the "Sharing" tab in the page that pops up, then click "Share" <br>
     5. Type in the full name of the "Group:" below that is in the same row as the folder you clicked (ex: type "domain users" instead of just "domain", then click "Add" <br>
