@@ -1,9 +1,5 @@
 # azure-network-protocols
 
-<p align="center">
-<img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
-</p>
-
 <h1>Network File Shares and Permissions </h1>
 <strong> General Idea: </strong><br>
 Creating four folders in DC-1 and telling Client-1's user what they're allowed to do it (will they be able to write in it, or just read it, or even have access to it at all). <br>
