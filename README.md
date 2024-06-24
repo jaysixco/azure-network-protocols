@@ -11,9 +11,6 @@ Create the security group before you even create the folders, so that you can ju
 For this step, have in mind the Client-1 username you plan to use. <br>
 After all that is done, THEN log into Client-1 with whatever user you choose. <br>
 
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
 
 <h2>Environments and Technologies Used</h2>
 
