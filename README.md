@@ -16,7 +16,7 @@ After all that is done, THEN log into Client-1 with whatever user you choose. <b
 
 <h2>Operating Systems Used </h2>
 
-- Windows 10</b> (21H2)
+- Windows 11</b> (22H2)
 
 <h2>List of Prerequisites</h2>
 
