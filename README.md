@@ -1,6 +1,6 @@
 # azure-network-protocols
 
-<h1>Network File Shares and Permissions </h1>
+<h1>Network File Shares and Permissions - Summary </h1>
 <strong> General Idea: </strong><br>
 Creating four folders in DC-1 and telling Client-1's user what they're allowed to do it (will they be able to write in it, or just read it, or even have access to it at all). <br>
 Create the security group before you even create the folders, so that you can just set conditions for them all in one go. <br>
