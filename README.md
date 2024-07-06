@@ -1,7 +1,6 @@
 # azure-network-protocols
 
 <h1>Network File Shares and Permissions - Summary </h1>
-<strong> General Idea: </strong><br>
 In this tutorial we are going to create four folders in DC-1 and tell Client-1's user what they're allowed to do it (will they be able to write in it, or just read it, or even have access to it at all). <br>
 
 <h2>Environments and Technologies Used</h2>
