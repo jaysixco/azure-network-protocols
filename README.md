@@ -2,11 +2,7 @@
 
 <h1>Network File Shares and Permissions - Summary </h1>
 <strong> General Idea: </strong><br>
-Creating four folders in DC-1 and telling Client-1's user what they're allowed to do it (will they be able to write in it, or just read it, or even have access to it at all). <br>
-Create the security group before you even create the folders, so that you can just set conditions for them all in one go. <br>
-For this step, have in mind the Client-1 username you plan to use. <br>
-After all that is done, THEN log into Client-1 with whatever user you choose. <br>
-
+In this tutorial we are going to create four folders in DC-1 and tell Client-1's user what they're allowed to do it (will they be able to write in it, or just read it, or even have access to it at all). <br>
 
 <h2>Environments and Technologies Used</h2>
 
