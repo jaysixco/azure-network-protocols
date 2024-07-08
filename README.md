@@ -7,7 +7,6 @@ In this tutorial we are going to create four folders in DC-1 and tell Client-1's
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
-- Internet Information Services (IIS)
 
 <h2>Operating Systems Used </h2>
 
